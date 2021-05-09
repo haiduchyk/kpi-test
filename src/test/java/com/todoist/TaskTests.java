@@ -15,7 +15,7 @@ public class TaskTests extends WebDriverTests
     @BeforeClass
     public static void generateEmail()
     {
-        XmlLoader loader = new XmlLoader();
+        UserDataLoader loader = new UserDataLoader();
         TestUser user = loader.Load();
         email = user.email;
         password = user.password;
