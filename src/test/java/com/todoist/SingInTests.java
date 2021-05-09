@@ -32,33 +32,33 @@ public class SingInTests extends WebDriverTests
         homePage.openSignInPage();
     }
 
-    @Test
-    public void singInWithEmail()
-    {
-        SingInPage singInPage = PageFactory.initElements(driver, SingInPage.class);
-        singInPage.fillLogin(email);
-        singInPage.fillPassword(password);
-        singInPage.signIn();
+//    @Test
+//    public void singInWithEmail()
+//    {
+//        SingInPage singInPage = PageFactory.initElements(driver, SingInPage.class);
+//        singInPage.fillLogin(email);
+//        singInPage.fillPassword(password);
+//        singInPage.signIn();
+//
+//        Assert.assertEquals(url, singInPage.getCurrentUrl());
+//    }
 
-        Assert.assertEquals(url, singInPage.getCurrentUrl());
-    }
-
-    @Test
-    public void singInWrongPassword()
-    {
-        SingInPage singInPage = PageFactory.initElements(driver, SingInPage.class);
-        singInPage.fillLogin(email);
-        singInPage.fillPassword("wrong_password");
-        singInPage.signIn();
-
-        Assert.assertTrue(singInPage.hasErrorMessages());
-    }
-
-    @Test
-    public void openSingUp()
-    {
-        SingInPage singInPage = PageFactory.initElements(driver, SingInPage.class);
-        singInPage.signUp();
-        Assert.assertEquals(url, singInPage.getCurrentUrl());
-    }
+//    @Test
+//    public void singInWrongPassword()
+//    {
+//        SingInPage singInPage = PageFactory.initElements(driver, SingInPage.class);
+//        singInPage.fillLogin(email);
+//        singInPage.fillPassword("wrong_password");
+//        singInPage.signIn();
+//
+//        Assert.assertTrue(singInPage.hasErrorMessages());
+//    }
+//
+//    @Test
+//    public void openSingUp()
+//    {
+//        SingInPage singInPage = PageFactory.initElements(driver, SingInPage.class);
+//        singInPage.signUp();
+//        Assert.assertEquals(url, singInPage.getCurrentUrl());
+//    }
 }

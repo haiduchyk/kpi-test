@@ -54,14 +54,14 @@ public class TaskTests extends WebDriverTests
         Assert.assertEquals(newAmount, previousAmount + 1);
     }
 
-    @Test
-    public void createWrongTask()
-    {
-        TasksPage page = PageFactory.initElements(driver, TasksPage.class);
-        int previousAmount = page.GetNumberOfTasks();
-        page.createTask("");
-        int newAmount = page.GetNumberOfTasks();
-        Assert.assertEquals(newAmount, previousAmount + 1);
-    }
+//    @Test
+//    public void createWrongTask()
+//    {
+//        TasksPage page = PageFactory.initElements(driver, TasksPage.class);
+//        int previousAmount = page.GetNumberOfTasks();
+//        page.createTask("");
+//        int newAmount = page.GetNumberOfTasks();
+//        Assert.assertEquals(newAmount, previousAmount + 1);
+//    }
 
 }

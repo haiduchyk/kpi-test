@@ -24,7 +24,7 @@ public class TasksPage
     @FindBy(xpath = "//*[@id=\"edit_project_modal_field_name\"]")
     private WebElement nameInput;
 
-    @FindBy(xpath = "//*[@id=\"reactist-modal-box-8\"]/form/footer/button[2]")
+    @FindBy(xpath = "/html/body/reach-portal/div[3]/div/div/div[3]/div/form/footer/button[2]")
     private WebElement submitButton;
 
 
