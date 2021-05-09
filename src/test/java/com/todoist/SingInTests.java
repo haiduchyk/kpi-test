@@ -43,16 +43,16 @@ public class SingInTests extends WebDriverTests
 //        Assert.assertEquals(url, singInPage.getCurrentUrl());
 //    }
 
-//    @Test
-//    public void singInWrongPassword()
-//    {
-//        SingInPage singInPage = PageFactory.initElements(driver, SingInPage.class);
-//        singInPage.fillLogin(email);
-//        singInPage.fillPassword("wrong_password");
-//        singInPage.signIn();
-//
-//        Assert.assertTrue(singInPage.hasErrorMessages());
-//    }
+    @Test
+    public void singInWrongPassword()
+    {
+        SingInPage singInPage = PageFactory.initElements(driver, SingInPage.class);
+        singInPage.fillLogin(email);
+        singInPage.fillPassword("wrong_password");
+        singInPage.signIn();
+
+        Assert.assertTrue(singInPage.hasErrorMessages());
+    }
 //
 //    @Test
 //    public void openSingUp()
